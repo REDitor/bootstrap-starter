@@ -8,7 +8,41 @@ h1, h2 {
     font-weight:700;
 } 
 
-img {   
+.product-card img {
     max-width: 115px;
     max-height: 100px;
+    margin: auto;
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .product-card img {
+        max-width: 85px;
+        max-height: 100px;
+        float: left;
+    }
+}
+
+.product-card {
+    box-shadow: 1px 1px 4px 0 rgb(30 30 30 / 16%);
+}
+
+.product-card button {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+
+.product-card p {
+    font-size: .9rem;
+}
+
+.product-card small {
+    color: #b3b3b3;
+    font-size: 0.8rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: 700;
 }
